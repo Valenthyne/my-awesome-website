@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>Welcome to Page Two!</title>
+		<link rel="icon" type="image/gif" href="media/dog.gif"/>
+	</head>
+	<body background="media/megu.png";>
+        <p>Meme</p>
+        <button onclick="playSound()">STEAL ME!</button><br>
+       
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/v45oMhrrm6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		
+		<iframe id="ytplayer" type="text/html" width="720" height="405"
+src="https://www.youtube.com/embed/v45oMhrrm6Y"
+frameborder="0" allowfullscreen>
+    </body>
+</html>
+
+<script>
+    var timeStart = new Date().GetTime();
+   
+    
+    function playSound() {
+        var path = "media/steal.mp3";
+        var snd = new Audio(path);
+        snd.play();
+    }
+</script>

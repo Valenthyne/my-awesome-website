@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- These comment tags suck! -->
+<!-- Site by Drachen | Established November 1, 2018 -->
+<!-- HTML/CSS rox my sox!! -->
+
+<html lang="en-US">
+    <head>
+        <title>my awesum site!</title>
+        <meta charset="UTF-8">
+		<link rel="icon" type="image/gif" href="media/dog.gif"/>
+        <!-- <link rel="stylesheet" href="styles.css"> --> 
+    <body style="background-color:#33f0ff">
+        <h1>Hello!</h1>
+        <p title="Default text">This is a sample paragraph, though it wont be the correct amount of sentences because that's for English majors.</p>
+        <hr>
+        <p style="color:red; font-family:Comic Sans MS">This is red text in Comic Sans!</p>
+			<pre>
+				Testing special text.
+				
+				Does it work? Who knows.
+				
+				I expect Courier font.
+			</pre>
+        <p style="font-size:250%; text-align:center">Huge font!!</p>
+        <marquee>i miss this effect</marquee>
+        <a href="https://twitter.com/dr4chen">Follow my Twitter!</a><br><br>
+        <img src="media/eatIt.png" alt="Cute smug girl" width="100" height="100"></img>
+        <button onclick="doThis()">Click me for fun!</button><br>
+		<button onclick="pause()">Pauise!</button><br>
+			<ul>
+				<li>Tea</li>
+				<li>Coffee</li>
+				<li>Cake</li>
+			</ul>
+        <p>
+            <p style="color:tomato; border:2px solid tomato">
+				<marquee><strong>I'M A TOMATO!</marquee></strong></p>
+				<marquee><img src="media/tomato.png"></img></marquee>
+				<b>bold text</b>
+				<i>italics</i>
+				<strong>IMPORTANT!</strong>
+				<em>emphasized?</em>
+				<mark>highlighted</mark>
+				<small>smol loli text</small>
+				<del>deleted text</del>
+				<ins>inserted text</ins>
+				<sub>sub text</sub>
+				<sup>super text</sup>
+				<q>"This right here is a QUOTE!" -Me, 2018</q>
+				<blockquote>"This is a BLOCK QUOTE!" -Also Me, 2018</blockquote>
+				<abbr title="Team SoloMid">TSM</abbr><br>
+				<address>
+					Meme<br>
+					Also Meme<br>
+					Meme.com<br>
+					418 Pershing Dr, White Sands<br>
+					USA
+				</address><br>
+				<cite>My Citation</cite> by Myself. Painted never.
+				<bdo dir="rtl">Backwards writing, baby!</bdo>
+        </p>
+    <h2><a href="page2.html">Next Page</a></h2>
+    </body>
+	
+	
+	<audio id="music" src="media/du.m4a" preload="auto"></audio>
+</html>
+
+<script>
+	var snd = document.getElementById("music");
+	snd.loop = true;
+	var playing = false;
+	
+    function doThis() {
+        alert("Hello!"); 
+        var i = 5;
+        var j = 3;
+        alert("5 + 3 = " + (i+j));
+    }
+	
+	function playMusic() {
+		snd.play();
+		playing = true;
+		snd.volume = 0.02;
+	}
+	
+	function pause() {
+		if (playing) {
+			snd.pause();
+		} else {
+			snd.play();
+		}
+	}
+	
+	<!-- Thanks to Iceman from Stack Overflow -->
+	snd.onplaying = function() {
+		playing = true;
+	};
+	snd.onpause = function() {
+		playing = false;
+	};
+	
+	playMusic();
+</script>
